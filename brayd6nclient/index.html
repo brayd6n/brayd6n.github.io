@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brayd6n Client</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            text-align: center;
+        }
+
+        .top-text {
+            margin-top: 20px;
+            font-size: 18px;
+            max-width: 700px;
+        }
+
+        .middle-text {
+            font-size: 20px;
+            line-height: 1.6;
+            position: relative;
+            top: -300px;
+        }
+
+        .ip-label {
+            font-weight: bold;
+        }
+
+        .ip {
+            font-weight: bold;
+            display: inline-block;
+            border-bottom: 2px solid white;
+            padding-bottom: 2px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            padding: 20px 0;
+        }
+
+        .button-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        button {
+            padding: 12px 32px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 999px;
+            background-color: #444;
+            color: white;
+            border: 2px solid #701bf3;
+            box-shadow: 0 0 8px #701bf3, 0 0 16px #701bf3;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        button:hover {
+            background-color: #2f2f2f;
+            box-shadow: 0 0 12px #701bf3, 0 0 24px #701bf3;
+        }
+
+        .discord-icon {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-text">
+        This Website Is Still Under Development, Join Our Discord And EaglerCraft 1.5.2 Server!
+    </div>
+
+    <div class="middle-text">
+        <span class="ip-label">EaglerCraft 1.5.2 Server IP:</span><br><br>
+        <span class="ip">brayd6n.github.io</span>
+    </div>
+
+    <div class="button-container">
+
+        <div class="button-row">
+            <button onclick="window.location.href='https://brayd6n.github.io/classicclient'">
+                Classic Client (Casual, High FPS)
+            </button>
+
+            <button onclick="window.location.href='https://brayd6n.github.io/brayd6nclient'">
+                brayd6n Client (Competitive, PVP)
+            </button>
+        </div>
+
+        <div class="button-row">
+            <button onclick="window.location.href='https://discord.gg/wAKK3Q7KcZ'">
+                <img class="discord-icon"
+                     src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/discord.svg"
+                     alt="Discord">
+                Join Our Discord
+            </button>
+
+            <button onclick="window.location.href='https://brayd6n.github.io'">
+                brayd6n Client Update Log
+            </button>
+        </div>
+
+    </div>
+
+</body>
+</html>
